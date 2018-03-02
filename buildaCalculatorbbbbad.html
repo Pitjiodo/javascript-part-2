@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    
+    <body>
+      
+       <form>
+       <p class="number1"></p>
+       <p class="number2"></p>
+       </form>
+       <button class="plus">+</button>
+       <button class="minus">-</button>
+       <button class="multiplication">*</button>
+       <button class="division">/</button>
+       <h1 class="number"></h1>
+
+      
+      
+      
+       <script>
+           function Calculator(arg1, arg2) {
+            return parseInt(arg1) + parseInt(arg2);
+            }
+           var number1 = prompt('number1');
+           var number2 = prompt('number2');
+           
+document.querySelector('.number1').innerHTML = number1;
+
+document.querySelector('.number2').innerHTML = number2;
+
+var val = Calculator(number1, number2);
+document.querySelector('.number').innerHTML = val;
+           
+onclick=""
+           
+       </script>
+    </body>
+</html>

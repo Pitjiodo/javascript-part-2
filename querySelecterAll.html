@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    
+    <body>
+       <ul class="myList">
+            
+       </ul>
+       
+       <script>
+           var fruits = ['apple', 'bannanna', 'pineapple', 'lime', 'coconut', 'orange', 'kiwi'];
+           
+           var li = document.querySelector('.myList');
+           
+           for(var i in fruits)
+           {
+               var liElm = document.createElement('li');
+               liElm.innerHTML = fruits[i];
+               li.append(liElm);
+           }
+           
+       </script>
+    </body>
+</html>

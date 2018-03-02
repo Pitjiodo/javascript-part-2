@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    
+    <body>
+        <button>deeppink</button>
+        <button>lime</button>
+      
+       <script>
+           var btns = document.querySelectorAll('button');
+           var body = document.querySelector('body');
+           
+           for(var i = 0; i< btns.length; i++)
+               {
+                   btns[i].addEventListener('mouseover', function(event)
+                    {
+                       console.log(event.target.textContent);
+                       body.style.backgroundColor = event.target.textContent;
+                   });
+               }
+
+           
+       </script>
+    </body>
+</html>
